@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body{
+ background-image:url("https://media.istockphoto.com/id/135018895/photo/laboratory.webp?b=1&s=612x612&w=0&k=20&c=7z2kt0X7VvfIzsYffH57WoPhHLxI0M2MDTSIWKTvT8Y=");
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 25%;
+background-color: aqua;
+}
+body
+</style>
+</head>
+<body>
+<table class="center">
+  <tr>
+    <th>Name</th>
+    <th>LAB</th> 
+    <th> Grade</th>
+  </tr>
+
+<tr>
+       <td><input name="test" type="text" placeholder="enter your Name" oninput="this.value=(this.value.match('[a-zA-Z]+'))"></td>
+    <td><input name="test" type="text" placeholder="lab" ></td>
+    <td> <input type="text" name="mark" placeholder ="grade:A,B,C,D,F" oninput="this.value=(this.value.match('[a-fA-F]+'))"/></td>
+</tr>
+
+</table>
+<div style="text-align: center;">
+<input type ="submit" /></div>
+</body>
+</html>

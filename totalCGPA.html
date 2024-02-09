@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+body{
+ background-image:url("https://cdn.pixabay.com/photo/2017/01/09/12/49/mistake-1966448_640.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 5%;
+background-color: aqua;
+}
+body
+</style>
+</head>
+<body>
+<table class="center">
+  <tr>
+    <th>Name</th>
+    <th>CGPA</th> 
+    <th> Grade</th>
+  </tr>
+
+<tr>
+       <td><input name="test" type="text" placeholder="enter your Name" oninput="this.value=(this.value.match('[a-zA-Z]+'))"></td>
+    <td><input name="test" type="text" placeholder="CGPA" oninput="this.value=(this.value.match('[0-9-.]+'))"/ ></td>
+    <td> <input type="text" name="mark" placeholder ="grade:A,B,C,D,F" oninput="this.value=(this.value.match('[a-fA-F]+'))"/></td>
+</tr>
+
+</table>
+<div style="text-align: center;">
+<input type ="submit" /></div>
+</body>
+</html>
